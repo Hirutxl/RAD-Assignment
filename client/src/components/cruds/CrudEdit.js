@@ -28,7 +28,6 @@ function CrudEdit(props) {
 			}
 			updateCrud();
 		},
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 		[props]
 	);
 
@@ -73,20 +72,18 @@ function CrudEdit(props) {
 					<input
 						name="phone"
 						type="tel"
-						pattern="(251)-[0-9]{3}-[0-9]{6}"
 						required
 						value={crud.phone}
 						onChange={handleChange}
 						className="form-control"
 					/>
-					<small>Format: 251-XXX-XXXXXX</small>
 				</div>
 				<div className="form-group">
 					<label>Email</label>
 					<input
 						name="email"
 						type="email"
-						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
+						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"image.png
 						required
 						value={crud.email}
 						onChange={handleChange}

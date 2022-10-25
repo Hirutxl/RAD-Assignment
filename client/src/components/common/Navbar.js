@@ -41,24 +41,7 @@ const Navbar = () => {
 								CRUDs
 							</NavLink>
 						</li>
-						<li className="nav-item">
-							<NavLink
-								className="nav-link"
-								activeClassName="active"
-								to="/cruds/grid-view"
-							>
-								Grid View
-							</NavLink>
-						</li>
-						<li className="nav-item">
-							<NavLink
-								className="nav-link"
-								activeClassName="active"
-								to="/cruds/list-view"
-							>
-								List View
-							</NavLink>
-						</li>
+						
 					</ul>
 				</div>
 			</div>

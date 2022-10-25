@@ -17,7 +17,6 @@ function CrudAdd(props) {
 
 	function handleSubmit(event) {
 		event.preventDefault();
-		//if (!crud.companyName || !crud.email) return;
 		async function postCrud() {
 			try {
 				const response = await post("/api/cruds/", crud);
@@ -58,20 +57,17 @@ function CrudAdd(props) {
 					<input
 						name="phone"
 						type="tel"
-						pattern="(251)-[0-9]{3}-[0-9]{6}"
 						required
 						value={crud.phone}
 						onChange={handleChange}
 						className="form-control"
 					/>
-					<small>Format: 251-XXX-XXXXXX</small>
 				</div>
 				<div className="form-group">
 					<label>Email</label>
 					<input
 						name="email"
 						type="email"
-						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
 						required
 						value={crud.email}
 						onChange={handleChange}
@@ -90,7 +86,7 @@ function CrudAdd(props) {
 					/>
 				</div>
 				<div className="form-group">
-					<label>Website/Social Link</label>
+					<label>FaceBook Link</label>
 					<input
 						name="link"
 						type="url"
@@ -98,7 +94,6 @@ function CrudAdd(props) {
 						onChange={handleChange}
 						className="form-control"
 					/>
-					<small>Format: https://yourlink.ext</small>
 				</div>
 
 				<div className="form-group">
